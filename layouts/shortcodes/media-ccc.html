@@ -1,0 +1,10 @@
+{{- $id := .Get "id" | default (.Get 0) -}}
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://media.ccc.de/v/{{ $id }}/oembed" 
+            frameborder="0"
+            allowfullscreen 
+            title="media.ccc.de Video"
+    >
+    </iframe>
+</div>
